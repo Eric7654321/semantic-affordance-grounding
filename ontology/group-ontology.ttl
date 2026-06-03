@@ -1,0 +1,69 @@
+@prefix : <https://hcis.io/ontology/aicapstone/group11/> .
+@prefix cap: <https://hcis.io/ontology/aicapstone/2026/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://hcis.io/ontology/aicapstone/group11/> a owl:Ontology ;
+    owl:imports <https://hcis.io/ontology/aicapstone/2026/> .
+
+# --- 簡化推論模式 (繞過 Jena 的複雜 DL 限制) ---
+cap:Cup rdfs:subClassOf cap:GraspableObject .
+cap:Knife rdfs:subClassOf cap:GraspableObject .
+cap:Fork rdfs:subClassOf cap:GraspableObject .
+cap:ToyBlock rdfs:subClassOf cap:GraspableObject .
+
+# --- 疊杯任務 (Cup Stacking) ---
+:blueCup01 a cap:Cup ;
+    rdfs:label "blue cup 01"@en ;
+    rdfs:comment "The blue cup target for Group 11"@en ;
+    cap:hasColor "blue"^^xsd:string ;
+    cap:hasObjectLabel "blue cup"^^xsd:string ;
+    cap:hasTaskRole cap:TargetObject .
+
+:pinkCup01 a cap:Cup ;
+    rdfs:label "pink cup 01"@en ;
+    rdfs:comment "The pink cup target for Group 11"@en ;
+    cap:hasColor "pink"^^xsd:string ;
+    cap:hasObjectLabel "pink cup"^^xsd:string ;
+    cap:hasTaskRole cap:TargetObject .
+
+# --- 排刀叉任務 (Cutlery Arrangement) ---
+:knife01 a cap:Knife ;
+    rdfs:label "knife 01"@en ;
+    rdfs:comment "The knife target for Group 11"@en ;
+    cap:hasObjectLabel "knife"^^xsd:string ;
+    cap:hasTaskRole cap:TargetObject .
+
+:fork01 a cap:Fork ;
+    rdfs:label "fork 01"@en ;
+    rdfs:comment "The fork target for Group 11"@en ;
+    cap:hasObjectLabel "fork"^^xsd:string ;
+    cap:hasTaskRole cap:TargetObject .
+
+:plate01 a cap:Plate ;
+    rdfs:label "plate 01"@en ;
+    rdfs:comment "The reference plate for Group 11"@en ;
+    cap:hasObjectLabel "plate"^^xsd:string ;
+    cap:hasTaskRole cap:ReferenceObject .
+
+# --- 收積木任務 (Toy Block Collection) ---
+:block01 a cap:ToyBlock ;
+    rdfs:label "red block 01"@en ;
+    rdfs:comment "The red block target for Group 11"@en ;
+    cap:hasColor "red"^^xsd:string ;
+    cap:hasObjectLabel "red block"^^xsd:string ;
+    cap:hasTaskRole cap:TargetObject .
+
+:block02 a cap:ToyBlock ;
+    rdfs:label "green block 01"@en ;
+    rdfs:comment "The green block target for Group 11"@en ;
+    cap:hasColor "green"^^xsd:string ;
+    cap:hasObjectLabel "green block"^^xsd:string ;
+    cap:hasTaskRole cap:TargetObject .
+
+:basket01 a cap:Basket ;
+    rdfs:label "basket 01"@en ;
+    rdfs:comment "The container basket for Group 11"@en ;
+    cap:hasObjectLabel "basket"^^xsd:string ;
+    cap:hasTaskRole cap:ContainerTarget .

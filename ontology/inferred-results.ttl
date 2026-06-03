@@ -1,0 +1,961 @@
+@prefix : <https://hcis.io/ontology/aicapstone/group11/> .
+@prefix cap: <https://hcis.io/ontology/aicapstone/2026/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:created owl:sameAs dcterms:created .
+
+dcterms:creator owl:sameAs dcterms:creator .
+
+dcterms:description owl:sameAs dcterms:description .
+
+dcterms:license owl:sameAs dcterms:license .
+
+dcterms:title owl:sameAs dcterms:title .
+
+vann:preferredNamespacePrefix owl:sameAs vann:preferredNamespacePrefix .
+
+vann:preferredNamespaceUri owl:sameAs vann:preferredNamespaceUri .
+
+rdf:HTML a rdfs:Datatype ;
+    owl:sameAs rdf:HTML .
+
+rdf:PlainLiteral a rdfs:Datatype ;
+    owl:sameAs rdf:PlainLiteral .
+
+rdf:XMLLiteral a rdfs:Datatype ;
+    owl:sameAs rdf:XMLLiteral .
+
+rdf:langString a rdfs:Datatype ;
+    owl:sameAs rdf:langString .
+
+rdf:type owl:sameAs rdf:type .
+
+rdfs:Literal a rdfs:Datatype ;
+    owl:sameAs rdfs:Literal .
+
+rdfs:comment a owl:AnnotationProperty ;
+    owl:sameAs rdfs:comment .
+
+rdfs:domain owl:sameAs rdfs:domain .
+
+rdfs:isDefinedBy a owl:AnnotationProperty ;
+    owl:sameAs rdfs:isDefinedBy .
+
+rdfs:label a owl:AnnotationProperty ;
+    owl:sameAs rdfs:label .
+
+rdfs:range owl:sameAs rdfs:range .
+
+rdfs:seeAlso a owl:AnnotationProperty ;
+    owl:sameAs rdfs:seeAlso .
+
+rdfs:subClassOf owl:sameAs rdfs:subClassOf .
+
+rdfs:subPropertyOf owl:sameAs rdfs:subPropertyOf .
+
+xsd:NCName a rdfs:Datatype ;
+    owl:sameAs xsd:NCName .
+
+xsd:NMTOKEN a rdfs:Datatype ;
+    owl:sameAs xsd:NMTOKEN .
+
+xsd:Name a rdfs:Datatype ;
+    owl:sameAs xsd:Name .
+
+xsd:anyURI a rdfs:Datatype ;
+    owl:sameAs xsd:anyURI .
+
+xsd:base64Binary a rdfs:Datatype ;
+    owl:sameAs xsd:base64Binary .
+
+xsd:boolean a rdfs:Datatype ;
+    owl:sameAs xsd:boolean .
+
+xsd:byte a rdfs:Datatype ;
+    owl:sameAs xsd:byte .
+
+xsd:dateTime a rdfs:Datatype ;
+    owl:sameAs xsd:dateTime .
+
+xsd:dateTimeStamp a rdfs:Datatype ;
+    owl:sameAs xsd:dateTimeStamp .
+
+xsd:double a rdfs:Datatype ;
+    owl:sameAs xsd:double .
+
+xsd:float a rdfs:Datatype ;
+    owl:sameAs xsd:float .
+
+xsd:hexBinary a rdfs:Datatype ;
+    owl:sameAs xsd:hexBinary .
+
+xsd:int a rdfs:Datatype ;
+    owl:sameAs xsd:int .
+
+xsd:integer a rdfs:Datatype ;
+    owl:sameAs xsd:integer .
+
+xsd:language a rdfs:Datatype ;
+    owl:sameAs xsd:language .
+
+xsd:long a rdfs:Datatype ;
+    owl:sameAs xsd:long .
+
+xsd:negativeInteger a rdfs:Datatype ;
+    owl:sameAs xsd:negativeInteger .
+
+xsd:nonNegativeInteger a rdfs:Datatype ;
+    owl:sameAs xsd:nonNegativeInteger .
+
+xsd:nonPositiveInteger a rdfs:Datatype ;
+    owl:sameAs xsd:nonPositiveInteger .
+
+xsd:normalizedString a rdfs:Datatype ;
+    owl:sameAs xsd:normalizedString .
+
+xsd:positiveInteger a rdfs:Datatype ;
+    owl:sameAs xsd:positiveInteger .
+
+xsd:short a rdfs:Datatype ;
+    owl:sameAs xsd:short .
+
+xsd:time a rdfs:Datatype ;
+    owl:sameAs xsd:time .
+
+xsd:token a rdfs:Datatype ;
+    owl:sameAs xsd:token .
+
+xsd:unsignedByte a rdfs:Datatype ;
+    owl:sameAs xsd:unsignedByte .
+
+xsd:unsignedInt a rdfs:Datatype ;
+    owl:sameAs xsd:unsignedInt .
+
+xsd:unsignedLong a rdfs:Datatype ;
+    owl:sameAs xsd:unsignedLong .
+
+xsd:unsignedShort a rdfs:Datatype ;
+    owl:sameAs xsd:unsignedShort .
+
+owl:backwardCompatibleWith a owl:AnnotationProperty ;
+    owl:sameAs owl:backwardCompatibleWith .
+
+owl:deprecated a owl:AnnotationProperty ;
+    owl:sameAs owl:deprecated .
+
+owl:equivalentClass owl:sameAs owl:equivalentClass .
+
+owl:equivalentProperty owl:sameAs owl:equivalentProperty .
+
+owl:imports owl:sameAs owl:imports .
+
+owl:incompatibleWith a owl:AnnotationProperty ;
+    owl:sameAs owl:incompatibleWith .
+
+owl:onProperty owl:sameAs owl:onProperty .
+
+owl:priorVersion a owl:AnnotationProperty ;
+    owl:sameAs owl:priorVersion .
+
+owl:sameAs owl:sameAs owl:sameAs .
+
+owl:someValuesFrom owl:sameAs owl:someValuesFrom .
+
+owl:versionInfo a owl:AnnotationProperty ;
+    owl:sameAs owl:versionInfo .
+
+foaf:mbox owl:sameAs foaf:mbox .
+
+foaf:name owl:sameAs foaf:name .
+
+<https://hcis.io/ontology/aicapstone/2026> a owl:Ontology ;
+    rdfs:label "AI Capstone 2026 Course Ontology"@en ;
+    dcterms:created "2026-05-22"^^xsd:date ;
+    dcterms:creator cap:ccyont ;
+    dcterms:description "This ontology defines a compact course vocabulary for representing physical task objects, task roles, manipulation affordances, grounding identifiers, and inferable graspability in the AI Capstone 2026 Physical AI project."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "AI Capstone 2026 Course Ontology"@en ;
+    vann:preferredNamespacePrefix "cap" ;
+    vann:preferredNamespaceUri "https://hcis.io/ontology/aicapstone/2026/" ;
+    rdfs:comment "A reduced educational ontology profile for semantic and affordance grounding of graspable objects in the AI Capstone 2026 course project."@en ;
+    owl:sameAs <https://hcis.io/ontology/aicapstone/2026> .
+
+: a owl:Ontology ;
+    owl:imports cap: ;
+    owl:sameAs : .
+
+:basket01 a _:n16f1ec13566747f3a2f7fa837e84599db7,
+        owl:Thing,
+        cap:Basket,
+        cap:PhysicalObject ;
+    rdfs:label "basket 01"@en ;
+    rdfs:comment "The container basket for Group 11"@en ;
+    owl:sameAs :basket01 ;
+    cap:hasObjectLabel "basket"^^xsd:string ;
+    cap:hasTaskRole cap:ContainerTarget .
+
+:block01 a _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6,
+        owl:Thing,
+        cap:GraspableObject,
+        cap:PhysicalObject,
+        cap:ToyBlock ;
+    rdfs:label "red block 01"@en ;
+    rdfs:comment "The red block target for Group 11"@en ;
+    owl:sameAs :block01 ;
+    cap:hasColor "red"^^xsd:string ;
+    cap:hasObjectLabel "red block"^^xsd:string ;
+    cap:hasTaskRole cap:TargetObject .
+
+:block02 a _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6,
+        owl:Thing,
+        cap:GraspableObject,
+        cap:PhysicalObject,
+        cap:ToyBlock ;
+    rdfs:label "green block 01"@en ;
+    rdfs:comment "The green block target for Group 11"@en ;
+    owl:sameAs :block02 ;
+    cap:hasColor "green"^^xsd:string ;
+    cap:hasObjectLabel "green block"^^xsd:string ;
+    cap:hasTaskRole cap:TargetObject .
+
+:blueCup01 a _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db2,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6,
+        owl:Thing,
+        cap:Cup,
+        cap:GraspableObject,
+        cap:PhysicalObject ;
+    rdfs:label "blue cup 01"@en ;
+    rdfs:comment "The blue cup target for Group 11"@en ;
+    owl:sameAs :blueCup01 ;
+    cap:hasColor "blue"^^xsd:string ;
+    cap:hasObjectLabel "blue cup"^^xsd:string ;
+    cap:hasTaskRole cap:TargetObject .
+
+:fork01 a _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6,
+        owl:Thing,
+        cap:Fork,
+        cap:GraspableObject,
+        cap:PhysicalObject ;
+    rdfs:label "fork 01"@en ;
+    rdfs:comment "The fork target for Group 11"@en ;
+    owl:sameAs :fork01 ;
+    cap:hasObjectLabel "fork"^^xsd:string ;
+    cap:hasTaskRole cap:TargetObject .
+
+:knife01 a _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6,
+        owl:Thing,
+        cap:GraspableObject,
+        cap:Knife,
+        cap:PhysicalObject ;
+    rdfs:label "knife 01"@en ;
+    rdfs:comment "The knife target for Group 11"@en ;
+    owl:sameAs :knife01 ;
+    cap:hasObjectLabel "knife"^^xsd:string ;
+    cap:hasTaskRole cap:TargetObject .
+
+:pinkCup01 a _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db2,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6,
+        owl:Thing,
+        cap:Cup,
+        cap:GraspableObject,
+        cap:PhysicalObject ;
+    rdfs:label "pink cup 01"@en ;
+    rdfs:comment "The pink cup target for Group 11"@en ;
+    owl:sameAs :pinkCup01 ;
+    cap:hasColor "pink"^^xsd:string ;
+    cap:hasObjectLabel "pink cup"^^xsd:string ;
+    cap:hasTaskRole cap:TargetObject .
+
+:plate01 a _:n16f1ec13566747f3a2f7fa837e84599db5,
+        owl:Thing,
+        cap:PhysicalObject,
+        cap:Plate ;
+    rdfs:label "plate 01"@en ;
+    rdfs:comment "The reference plate for Group 11"@en ;
+    owl:sameAs :plate01 ;
+    cap:hasObjectLabel "plate"^^xsd:string ;
+    cap:hasTaskRole cap:ReferenceObject .
+
+xsd:date a rdfs:Datatype ;
+    owl:sameAs xsd:date .
+
+xsd:decimal a rdfs:Datatype ;
+    owl:sameAs xsd:decimal .
+
+foaf:Person owl:sameAs foaf:Person .
+
+<https://creativecommons.org/licenses/by/4.0/> owl:sameAs <https://creativecommons.org/licenses/by/4.0/> .
+
+cap: owl:sameAs cap: .
+
+cap:ccyont a foaf:Person ;
+    owl:sameAs cap:ccyont ;
+    foaf:mbox <mailto:ccy@hptp.org> ;
+    foaf:name "Chun-yien Chang"@en .
+
+<mailto:ccy@hptp.org> owl:sameAs <mailto:ccy@hptp.org> .
+
+"2026-05-22"^^xsd:date a xsd:date ;
+    owl:sameAs "2026-05-22"^^xsd:date .
+
+"basket"^^xsd:string a xsd:string ;
+    owl:sameAs "basket"^^xsd:string .
+
+"blue"^^xsd:string a xsd:string ;
+    owl:sameAs "blue"^^xsd:string .
+
+"blue cup"^^xsd:string a xsd:string ;
+    owl:sameAs "blue cup"^^xsd:string .
+
+"cap" owl:sameAs "cap" .
+
+"fork"^^xsd:string a xsd:string ;
+    owl:sameAs "fork"^^xsd:string .
+
+"green"^^xsd:string a xsd:string ;
+    owl:sameAs "green"^^xsd:string .
+
+"green block"^^xsd:string a xsd:string ;
+    owl:sameAs "green block"^^xsd:string .
+
+"https://hcis.io/ontology/aicapstone/2026/" owl:sameAs "https://hcis.io/ontology/aicapstone/2026/" .
+
+"knife"^^xsd:string a xsd:string ;
+    owl:sameAs "knife"^^xsd:string .
+
+"pink"^^xsd:string a xsd:string ;
+    owl:sameAs "pink"^^xsd:string .
+
+"pink cup"^^xsd:string a xsd:string ;
+    owl:sameAs "pink cup"^^xsd:string .
+
+"plate"^^xsd:string a xsd:string ;
+    owl:sameAs "plate"^^xsd:string .
+
+"red"^^xsd:string a xsd:string ;
+    owl:sameAs "red"^^xsd:string .
+
+"red block"^^xsd:string a xsd:string ;
+    owl:sameAs "red block"^^xsd:string .
+
+"A container target used to receive toy blocks in the toy-block-collection task."@en owl:sameAs "A container target used to receive toy blocks in the toy-block-collection task."@en .
+
+"A container-like object used in the cup-stacking task."@en owl:sameAs "A container-like object used in the cup-stacking task."@en .
+
+"A goal-directed activity to be performed or evaluated in the course project."@en owl:sameAs "A goal-directed activity to be performed or evaluated in the course project."@en .
+
+"A material object in the task environment that may be perceived, manipulated, used as a reference object, or assigned a task role."@en owl:sameAs "A material object in the task environment that may be perceived, manipulated, used as a reference object, or assigned a task role."@en .
+
+"A reduced educational ontology profile for semantic and affordance grounding of graspable objects in the AI Capstone 2026 course project."@en owl:sameAs "A reduced educational ontology profile for semantic and affordance grounding of graspable objects in the AI Capstone 2026 course project."@en .
+
+"A reference object used for arranging cutlery in the cutlery-arrangement task."@en owl:sameAs "A reference object used for arranging cutlery in the cutlery-arrangement task."@en .
+
+"A robot component used to physically interact with objects, such as a gripper."@en owl:sameAs "A robot component used to physically interact with objects, such as a gripper."@en .
+
+"A robot or robot-controlled agent that can perceive objects, reason over the ontology, and act in the task environment."@en owl:sameAs "A robot or robot-controlled agent that can perceive objects, reason over the ontology, and act in the task environment."@en .
+
+"A role that an object plays within a task."@en owl:sameAs "A role that an object plays within a task."@en .
+
+"A small object to be collected into the basket in the toy-block-collection task."@en owl:sameAs "A small object to be collected into the basket in the toy-block-collection task."@en .
+
+"A task in which a robot changes the pose, state, or arrangement of physical objects."@en owl:sameAs "A task in which a robot changes the pose, state, or arrangement of physical objects."@en .
+
+"A task role for an object that is directly acted upon or manipulated."@en owl:sameAs "A task role for an object that is directly acted upon or manipulated."@en .
+
+"A task role for an object that receives or contains other objects."@en owl:sameAs "A task role for an object that receives or contains other objects."@en .
+
+"A task role for an object that should be collected into another object or location."@en owl:sameAs "A task role for an object that should be collected into another object or location."@en .
+
+"A task role for an object used as a spatial or semantic reference for arranging other objects."@en owl:sameAs "A task role for an object used as a spatial or semantic reference for arranging other objects."@en .
+
+"An action possibility associated with an object in relation to a robot capability and task context."@en owl:sameAs "An action possibility associated with an object in relation to a robot capability and task context."@en .
+
+"An affordance by which an object can contain or receive other objects."@en owl:sameAs "An affordance by which an object can contain or receive other objects."@en .
+
+"An affordance by which an object can participate in a stacking relation with another object."@en owl:sameAs "An affordance by which an object can participate in a stacking relation with another object."@en .
+
+"An affordance by which an object can support the placement or arrangement of other objects."@en owl:sameAs "An affordance by which an object can support the placement or arrangement of other objects."@en .
+
+"An affordance by which an object may be grasped, held, lifted, or repositioned by a robot gripper."@en owl:sameAs "An affordance by which an object may be grasped, held, lifted, or repositioned by a robot gripper."@en .
+
+"Chun-yien Chang"@en owl:sameAs "Chun-yien Chang"@en .
+
+"Links an ontology individual to a coordinate frame or pose-frame identifier used in perception, reconstruction, or simulation."@en owl:sameAs "Links an ontology individual to a coordinate frame or pose-frame identifier used in perception, reconstruction, or simulation."@en .
+
+"Records an approximate object width, which may be useful for checking whether an object fits within a gripper capability."@en owl:sameAs "Records an approximate object width, which may be useful for checking whether an object fits within a gripper capability."@en .
+
+"Records the object label used by perception, simulation, or task documentation."@en owl:sameAs "Records the object label used by perception, simulation, or task documentation."@en .
+
+"Records the perceived or assigned color of a physical object."@en owl:sameAs "Records the perceived or assigned color of a physical object."@en .
+
+"Relates a physical object to an affordance associated with that object in the task context."@en owl:sameAs "Relates a physical object to an affordance associated with that object in the task context."@en .
+
+"Relates a physical object to an end effector capable of manipulating it."@en owl:sameAs "Relates a physical object to an end effector capable of manipulating it."@en .
+
+"Relates a physical object to the role it plays in a task."@en owl:sameAs "Relates a physical object to the role it plays in a task."@en .
+
+"Relates a task to a physical object that is directly acted upon in that task."@en owl:sameAs "Relates a task to a physical object that is directly acted upon in that task."@en .
+
+"Relates a task to a physical object used as a spatial or semantic reference."@en owl:sameAs "Relates a task to a physical object used as a spatial or semantic reference."@en .
+
+"The blue cup target for Group 11"@en owl:sameAs "The blue cup target for Group 11"@en .
+
+"The container basket for Group 11"@en owl:sameAs "The container basket for Group 11"@en .
+
+"The fork target for Group 11"@en owl:sameAs "The fork target for Group 11"@en .
+
+"The green block target for Group 11"@en owl:sameAs "The green block target for Group 11"@en .
+
+"The knife target for Group 11"@en owl:sameAs "The knife target for Group 11"@en .
+
+"The pink cup target for Group 11"@en owl:sameAs "The pink cup target for Group 11"@en .
+
+"The red block target for Group 11"@en owl:sameAs "The red block target for Group 11"@en .
+
+"The reference plate for Group 11"@en owl:sameAs "The reference plate for Group 11"@en .
+
+"This ontology defines a compact course vocabulary for representing physical task objects, task roles, manipulation affordances, grounding identifiers, and inferable graspability in the AI Capstone 2026 Physical AI project."@en owl:sameAs "This ontology defines a compact course vocabulary for representing physical task objects, task roles, manipulation affordances, grounding identifiers, and inferable graspability in the AI Capstone 2026 Physical AI project."@en .
+
+"affordance"@en owl:sameAs "affordance"@en .
+
+"basket"@en owl:sameAs "basket"@en .
+
+"basket 01"@en owl:sameAs "basket 01"@en .
+
+"blue cup 01"@en owl:sameAs "blue cup 01"@en .
+
+"can be manipulated by"@en owl:sameAs "can be manipulated by"@en .
+
+"collectable object"@en owl:sameAs "collectable object"@en .
+
+"container target"@en owl:sameAs "container target"@en .
+
+"containment affordance"@en owl:sameAs "containment affordance"@en .
+
+"cup"@en owl:sameAs "cup"@en .
+
+"end effector"@en owl:sameAs "end effector"@en .
+
+"fork"@en owl:sameAs "fork"@en .
+
+"fork 01"@en owl:sameAs "fork 01"@en .
+
+"grasping affordance"@en owl:sameAs "grasping affordance"@en .
+
+"green block 01"@en owl:sameAs "green block 01"@en .
+
+"has affordance"@en owl:sameAs "has affordance"@en .
+
+"has approximate width"@en owl:sameAs "has approximate width"@en .
+
+"has color"@en owl:sameAs "has color"@en .
+
+"has object label"@en owl:sameAs "has object label"@en .
+
+"has pose frame"@en owl:sameAs "has pose frame"@en .
+
+"has reference object"@en owl:sameAs "has reference object"@en .
+
+"has target object"@en owl:sameAs "has target object"@en .
+
+"has task role"@en owl:sameAs "has task role"@en .
+
+"knife"@en owl:sameAs "knife"@en .
+
+"knife 01"@en owl:sameAs "knife 01"@en .
+
+"manipulation task"@en owl:sameAs "manipulation task"@en .
+
+"physical object"@en owl:sameAs "physical object"@en .
+
+"pink cup 01"@en owl:sameAs "pink cup 01"@en .
+
+"plate"@en owl:sameAs "plate"@en .
+
+"plate 01"@en owl:sameAs "plate 01"@en .
+
+"red block 01"@en owl:sameAs "red block 01"@en .
+
+"reference object"@en owl:sameAs "reference object"@en .
+
+"robot agent"@en owl:sameAs "robot agent"@en .
+
+"stackability affordance"@en owl:sameAs "stackability affordance"@en .
+
+"support affordance"@en owl:sameAs "support affordance"@en .
+
+"target object"@en owl:sameAs "target object"@en .
+
+"task"@en owl:sameAs "task"@en .
+
+"task role"@en owl:sameAs "task role"@en .
+
+"toy block"@en owl:sameAs "toy block"@en .
+
+owl:Nothing a owl:Class ;
+    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db2,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db5,
+        _:n16f1ec13566747f3a2f7fa837e84599db6,
+        _:n16f1ec13566747f3a2f7fa837e84599db7,
+        owl:Nothing,
+        owl:Thing,
+        cap:Affordance,
+        cap:Basket,
+        cap:CollectableObject,
+        cap:ContainerTarget,
+        cap:ContainmentAffordance,
+        cap:Cup,
+        cap:EndEffector,
+        cap:Fork,
+        cap:GraspableObject,
+        cap:GraspingAffordance,
+        cap:Knife,
+        cap:ManipulationTask,
+        cap:PhysicalObject,
+        cap:Plate,
+        cap:ReferenceObject,
+        cap:RobotAgent,
+        cap:StackabilityAffordance,
+        cap:SupportAffordance,
+        cap:TargetObject,
+        cap:Task,
+        cap:TaskRole,
+        cap:ToyBlock ;
+    owl:equivalentClass owl:Nothing ;
+    owl:sameAs owl:Nothing .
+
+owl:Ontology owl:sameAs owl:Ontology .
+
+cap:canBeManipulatedBy a owl:ObjectProperty ;
+    rdfs:label "can be manipulated by"@en ;
+    rdfs:comment "Relates a physical object to an end effector capable of manipulating it."@en ;
+    rdfs:domain owl:Thing,
+        cap:PhysicalObject ;
+    rdfs:range owl:Thing,
+        cap:EndEffector ;
+    rdfs:subPropertyOf cap:canBeManipulatedBy ;
+    owl:equivalentProperty cap:canBeManipulatedBy ;
+    owl:sameAs cap:canBeManipulatedBy .
+
+cap:hasApproxWidth a owl:DatatypeProperty ;
+    rdfs:label "has approximate width"@en ;
+    rdfs:comment "Records an approximate object width, which may be useful for checking whether an object fits within a gripper capability."@en ;
+    rdfs:domain owl:Thing,
+        cap:PhysicalObject ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf cap:hasApproxWidth ;
+    owl:equivalentProperty cap:hasApproxWidth ;
+    owl:sameAs cap:hasApproxWidth .
+
+cap:hasColor a owl:DatatypeProperty ;
+    rdfs:label "has color"@en ;
+    rdfs:comment "Records the perceived or assigned color of a physical object."@en ;
+    rdfs:domain owl:Thing,
+        cap:PhysicalObject ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf cap:hasColor ;
+    owl:equivalentProperty cap:hasColor ;
+    owl:sameAs cap:hasColor .
+
+cap:hasObjectLabel a owl:DatatypeProperty ;
+    rdfs:label "has object label"@en ;
+    rdfs:comment "Records the object label used by perception, simulation, or task documentation."@en ;
+    rdfs:domain owl:Thing,
+        cap:PhysicalObject ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf cap:hasObjectLabel ;
+    owl:equivalentProperty cap:hasObjectLabel ;
+    owl:sameAs cap:hasObjectLabel .
+
+cap:hasPoseFrame a owl:DatatypeProperty ;
+    rdfs:label "has pose frame"@en ;
+    rdfs:comment "Links an ontology individual to a coordinate frame or pose-frame identifier used in perception, reconstruction, or simulation."@en ;
+    rdfs:domain owl:Thing,
+        cap:PhysicalObject ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf cap:hasPoseFrame ;
+    owl:equivalentProperty cap:hasPoseFrame ;
+    owl:sameAs cap:hasPoseFrame .
+
+cap:hasReferenceObject a owl:ObjectProperty ;
+    rdfs:label "has reference object"@en ;
+    rdfs:comment "Relates a task to a physical object used as a spatial or semantic reference."@en ;
+    rdfs:domain owl:Thing,
+        cap:Task ;
+    rdfs:range owl:Thing,
+        cap:PhysicalObject ;
+    rdfs:subPropertyOf cap:hasReferenceObject ;
+    owl:equivalentProperty cap:hasReferenceObject ;
+    owl:sameAs cap:hasReferenceObject .
+
+cap:hasTargetObject a owl:ObjectProperty ;
+    rdfs:label "has target object"@en ;
+    rdfs:comment "Relates a task to a physical object that is directly acted upon in that task."@en ;
+    rdfs:domain owl:Thing,
+        cap:Task ;
+    rdfs:range owl:Thing,
+        cap:PhysicalObject ;
+    rdfs:subPropertyOf cap:hasTargetObject ;
+    owl:equivalentProperty cap:hasTargetObject ;
+    owl:sameAs cap:hasTargetObject .
+
+cap:hasTaskRole a owl:ObjectProperty ;
+    rdfs:label "has task role"@en ;
+    rdfs:comment "Relates a physical object to the role it plays in a task."@en ;
+    rdfs:domain owl:Thing,
+        cap:PhysicalObject ;
+    rdfs:range owl:Thing,
+        cap:TaskRole ;
+    rdfs:subPropertyOf cap:hasTaskRole ;
+    owl:equivalentProperty cap:hasTaskRole ;
+    owl:sameAs cap:hasTaskRole .
+
+"A cutlery object to be placed in the cutlery-arrangement task."@en owl:sameAs "A cutlery object to be placed in the cutlery-arrangement task."@en .
+
+"AI Capstone 2026 Course Ontology"@en owl:sameAs "AI Capstone 2026 Course Ontology"@en .
+
+cap:CollectableObject a owl:Class ;
+    rdfs:label "collectable object"@en ;
+    rdfs:comment "A task role for an object that should be collected into another object or location."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:CollectableObject,
+        cap:TaskRole ;
+    owl:equivalentClass cap:CollectableObject ;
+    owl:sameAs cap:CollectableObject .
+
+cap:ManipulationTask a owl:Class ;
+    rdfs:label "manipulation task"@en ;
+    rdfs:comment "A task in which a robot changes the pose, state, or arrangement of physical objects."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:ManipulationTask,
+        cap:Task ;
+    owl:equivalentClass cap:ManipulationTask ;
+    owl:sameAs cap:ManipulationTask .
+
+cap:RobotAgent a owl:Class ;
+    rdfs:label "robot agent"@en ;
+    rdfs:comment "A robot or robot-controlled agent that can perceive objects, reason over the ontology, and act in the task environment."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:RobotAgent ;
+    owl:equivalentClass cap:RobotAgent ;
+    owl:sameAs cap:RobotAgent .
+
+owl:DatatypeProperty owl:sameAs owl:DatatypeProperty .
+
+cap:Basket a owl:Class ;
+    rdfs:label "basket"@en ;
+    rdfs:comment "A container target used to receive toy blocks in the toy-block-collection task."@en ;
+    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db7,
+        owl:Thing,
+        cap:Basket,
+        cap:PhysicalObject ;
+    owl:equivalentClass cap:Basket ;
+    owl:sameAs cap:Basket .
+
+cap:ContainerTarget a owl:Class,
+        owl:Thing,
+        cap:TaskRole ;
+    rdfs:label "container target"@en ;
+    rdfs:comment "A task role for an object that receives or contains other objects."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:ContainerTarget,
+        cap:TaskRole ;
+    owl:equivalentClass cap:ContainerTarget ;
+    owl:sameAs cap:ContainerTarget .
+
+cap:ContainmentAffordance a owl:Class ;
+    rdfs:label "containment affordance"@en ;
+    rdfs:comment "An affordance by which an object can contain or receive other objects."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:Affordance,
+        cap:ContainmentAffordance ;
+    owl:equivalentClass cap:ContainmentAffordance ;
+    owl:sameAs cap:ContainmentAffordance .
+
+cap:EndEffector a owl:Class ;
+    rdfs:label "end effector"@en ;
+    rdfs:comment "A robot component used to physically interact with objects, such as a gripper."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:EndEffector ;
+    owl:equivalentClass cap:EndEffector ;
+    owl:sameAs cap:EndEffector .
+
+cap:Fork a owl:Class ;
+    rdfs:label "fork"@en ;
+    rdfs:comment "A cutlery object to be placed in the cutlery-arrangement task."@en ;
+    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6,
+        owl:Thing,
+        cap:Fork,
+        cap:GraspableObject,
+        cap:PhysicalObject ;
+    owl:equivalentClass cap:Fork ;
+    owl:sameAs cap:Fork .
+
+cap:Knife a owl:Class ;
+    rdfs:label "knife"@en ;
+    rdfs:comment "A cutlery object to be placed in the cutlery-arrangement task."@en ;
+    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6,
+        owl:Thing,
+        cap:GraspableObject,
+        cap:Knife,
+        cap:PhysicalObject ;
+    owl:equivalentClass cap:Knife ;
+    owl:sameAs cap:Knife .
+
+cap:Plate a owl:Class ;
+    rdfs:label "plate"@en ;
+    rdfs:comment "A reference object used for arranging cutlery in the cutlery-arrangement task."@en ;
+    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db5,
+        owl:Thing,
+        cap:PhysicalObject,
+        cap:Plate ;
+    owl:equivalentClass cap:Plate ;
+    owl:sameAs cap:Plate .
+
+cap:ReferenceObject a owl:Class,
+        owl:Thing,
+        cap:TaskRole ;
+    rdfs:label "reference object"@en ;
+    rdfs:comment "A task role for an object used as a spatial or semantic reference for arranging other objects."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:ReferenceObject,
+        cap:TaskRole ;
+    owl:equivalentClass cap:ReferenceObject ;
+    owl:sameAs cap:ReferenceObject .
+
+cap:StackabilityAffordance a owl:Class ;
+    rdfs:label "stackability affordance"@en ;
+    rdfs:comment "An affordance by which an object can participate in a stacking relation with another object."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:Affordance,
+        cap:StackabilityAffordance ;
+    owl:equivalentClass cap:StackabilityAffordance ;
+    owl:sameAs cap:StackabilityAffordance .
+
+cap:SupportAffordance a owl:Class ;
+    rdfs:label "support affordance"@en ;
+    rdfs:comment "An affordance by which an object can support the placement or arrangement of other objects."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:Affordance,
+        cap:SupportAffordance ;
+    owl:equivalentClass cap:SupportAffordance ;
+    owl:sameAs cap:SupportAffordance .
+
+owl:ObjectProperty owl:sameAs owl:ObjectProperty .
+
+cap:Cup a owl:Class ;
+    rdfs:label "cup"@en ;
+    rdfs:comment "A container-like object used in the cup-stacking task."@en ;
+    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db2,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6,
+        owl:Thing,
+        cap:Cup,
+        cap:GraspableObject,
+        cap:PhysicalObject ;
+    owl:equivalentClass cap:Cup ;
+    owl:sameAs cap:Cup .
+
+cap:ToyBlock a owl:Class ;
+    rdfs:label "toy block"@en ;
+    rdfs:comment "A small object to be collected into the basket in the toy-block-collection task."@en ;
+    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6,
+        owl:Thing,
+        cap:GraspableObject,
+        cap:PhysicalObject,
+        cap:ToyBlock ;
+    owl:equivalentClass cap:ToyBlock ;
+    owl:sameAs cap:ToyBlock .
+
+cap:Task a owl:Class ;
+    rdfs:label "task"@en ;
+    rdfs:comment "A goal-directed activity to be performed or evaluated in the course project."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:Task ;
+    owl:equivalentClass cap:Task ;
+    owl:sameAs cap:Task .
+
+owl:Restriction owl:sameAs owl:Restriction .
+
+cap:GraspingAffordance a owl:Class ;
+    rdfs:label "grasping affordance"@en ;
+    rdfs:comment "An affordance by which an object may be grasped, held, lifted, or repositioned by a robot gripper."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:Affordance,
+        cap:GraspingAffordance ;
+    owl:equivalentClass cap:GraspingAffordance ;
+    owl:sameAs cap:GraspingAffordance .
+
+cap:Affordance a owl:Class ;
+    rdfs:label "affordance"@en ;
+    rdfs:comment "An action possibility associated with an object in relation to a robot capability and task context."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:Affordance ;
+    owl:equivalentClass cap:Affordance ;
+    owl:sameAs cap:Affordance .
+
+owl:AnnotationProperty owl:sameAs owl:AnnotationProperty .
+
+cap:TargetObject a owl:Class,
+        owl:Thing,
+        cap:TaskRole ;
+    rdfs:label "target object"@en ;
+    rdfs:comment "A task role for an object that is directly acted upon or manipulated."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:TargetObject,
+        cap:TaskRole ;
+    owl:equivalentClass cap:TargetObject ;
+    owl:sameAs cap:TargetObject .
+
+cap:hasAffordance a owl:ObjectProperty ;
+    rdfs:label "has affordance"@en ;
+    rdfs:comment "Relates a physical object to an affordance associated with that object in the task context."@en ;
+    rdfs:domain owl:Thing,
+        cap:PhysicalObject ;
+    rdfs:range owl:Thing,
+        cap:Affordance ;
+    rdfs:subPropertyOf cap:hasAffordance ;
+    owl:equivalentProperty cap:hasAffordance ;
+    owl:sameAs cap:hasAffordance .
+
+cap:GraspableObject owl:sameAs cap:GraspableObject .
+
+cap:TaskRole a owl:Class ;
+    rdfs:label "task role"@en ;
+    rdfs:comment "A role that an object plays within a task."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:TaskRole ;
+    owl:equivalentClass cap:TaskRole ;
+    owl:sameAs cap:TaskRole .
+
+xsd:string a rdfs:Datatype ;
+    owl:sameAs xsd:string .
+
+owl:Class owl:sameAs owl:Class .
+
+cap:PhysicalObject a owl:Class ;
+    rdfs:label "physical object"@en ;
+    rdfs:comment "A material object in the task environment that may be perceived, manipulated, used as a reference object, or assigned a task role."@en ;
+    rdfs:subClassOf owl:Thing,
+        cap:PhysicalObject ;
+    owl:equivalentClass cap:PhysicalObject ;
+    owl:sameAs cap:PhysicalObject .
+
+rdfs:Datatype owl:sameAs rdfs:Datatype .
+
+owl:Thing a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    owl:equivalentClass owl:Thing ;
+    owl:sameAs owl:Thing .
+
+_:n16f1ec13566747f3a2f7fa837e84599db5 a owl:Restriction ;
+    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db5 ;
+    owl:equivalentClass _:n16f1ec13566747f3a2f7fa837e84599db5 ;
+    owl:onProperty cap:hasAffordance ;
+    owl:sameAs _:n16f1ec13566747f3a2f7fa837e84599db5 ;
+    owl:someValuesFrom cap:SupportAffordance .
+
+_:n16f1ec13566747f3a2f7fa837e84599db7 a owl:Restriction ;
+    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db7 ;
+    owl:equivalentClass _:n16f1ec13566747f3a2f7fa837e84599db7 ;
+    owl:onProperty cap:hasAffordance ;
+    owl:sameAs _:n16f1ec13566747f3a2f7fa837e84599db7 ;
+    owl:someValuesFrom cap:ContainmentAffordance .
+
+_:n16f1ec13566747f3a2f7fa837e84599db2 a owl:Restriction ;
+    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db2 ;
+    owl:equivalentClass _:n16f1ec13566747f3a2f7fa837e84599db2 ;
+    owl:onProperty cap:hasAffordance ;
+    owl:sameAs _:n16f1ec13566747f3a2f7fa837e84599db2 ;
+    owl:someValuesFrom cap:StackabilityAffordance .
+
+_:n16f1ec13566747f3a2f7fa837e84599db1 a owl:Restriction ;
+    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
+    owl:equivalentClass _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
+    owl:onProperty cap:hasAffordance ;
+    owl:sameAs _:n16f1ec13566747f3a2f7fa837e84599db1 ;
+    owl:someValuesFrom cap:GraspingAffordance .
+
+_:n16f1ec13566747f3a2f7fa837e84599db3 a owl:Restriction ;
+    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
+    owl:equivalentClass _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
+    owl:onProperty cap:hasAffordance ;
+    owl:sameAs _:n16f1ec13566747f3a2f7fa837e84599db3 ;
+    owl:someValuesFrom cap:GraspingAffordance .
+
+_:n16f1ec13566747f3a2f7fa837e84599db4 a owl:Restriction ;
+    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
+    owl:equivalentClass _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
+    owl:onProperty cap:hasAffordance ;
+    owl:sameAs _:n16f1ec13566747f3a2f7fa837e84599db4 ;
+    owl:someValuesFrom cap:GraspingAffordance .
+
+_:n16f1ec13566747f3a2f7fa837e84599db6 a owl:Restriction ;
+    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
+    owl:equivalentClass _:n16f1ec13566747f3a2f7fa837e84599db1,
+        _:n16f1ec13566747f3a2f7fa837e84599db3,
+        _:n16f1ec13566747f3a2f7fa837e84599db4,
+        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
+    owl:onProperty cap:hasAffordance ;
+    owl:sameAs _:n16f1ec13566747f3a2f7fa837e84599db6 ;
+    owl:someValuesFrom cap:GraspingAffordance .
+
