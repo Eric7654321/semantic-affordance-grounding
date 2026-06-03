@@ -1,0 +1,9 @@
+PREFIX cap: <https://hcis.io/ontology/aicapstone/2026/>
+
+SELECT DISTINCT ?obj ?label ?role
+WHERE {
+  ?obj a cap:GraspableObject .
+  OPTIONAL { ?obj cap:hasObjectLabel ?label . }
+  OPTIONAL { ?obj cap:hasTaskRole ?role . }
+}
+ORDER BY ?obj

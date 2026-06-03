@@ -190,7 +190,7 @@ foaf:name owl:sameAs foaf:name .
     owl:imports cap: ;
     owl:sameAs : .
 
-:basket01 a _:n16f1ec13566747f3a2f7fa837e84599db7,
+:basket01 a _:neb276b0b53964c79b354357d517d3f94b7,
         owl:Thing,
         cap:Basket,
         cap:PhysicalObject ;
@@ -200,10 +200,10 @@ foaf:name owl:sameAs foaf:name .
     cap:hasObjectLabel "basket"^^xsd:string ;
     cap:hasTaskRole cap:ContainerTarget .
 
-:block01 a _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6,
+:block01 a _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6,
         owl:Thing,
         cap:GraspableObject,
         cap:PhysicalObject,
@@ -211,14 +211,15 @@ foaf:name owl:sameAs foaf:name .
     rdfs:label "red block 01"@en ;
     rdfs:comment "The red block target for Group 11"@en ;
     owl:sameAs :block01 ;
+    cap:hasAffordance :graspAffordance ;
     cap:hasColor "red"^^xsd:string ;
     cap:hasObjectLabel "red block"^^xsd:string ;
     cap:hasTaskRole cap:TargetObject .
 
-:block02 a _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6,
+:block02 a _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6,
         owl:Thing,
         cap:GraspableObject,
         cap:PhysicalObject,
@@ -226,15 +227,16 @@ foaf:name owl:sameAs foaf:name .
     rdfs:label "green block 01"@en ;
     rdfs:comment "The green block target for Group 11"@en ;
     owl:sameAs :block02 ;
+    cap:hasAffordance :graspAffordance ;
     cap:hasColor "green"^^xsd:string ;
     cap:hasObjectLabel "green block"^^xsd:string ;
     cap:hasTaskRole cap:TargetObject .
 
-:blueCup01 a _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db2,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6,
+:blueCup01 a _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b2,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6,
         owl:Thing,
         cap:Cup,
         cap:GraspableObject,
@@ -242,14 +244,15 @@ foaf:name owl:sameAs foaf:name .
     rdfs:label "blue cup 01"@en ;
     rdfs:comment "The blue cup target for Group 11"@en ;
     owl:sameAs :blueCup01 ;
+    cap:hasAffordance :graspAffordance ;
     cap:hasColor "blue"^^xsd:string ;
     cap:hasObjectLabel "blue cup"^^xsd:string ;
     cap:hasTaskRole cap:TargetObject .
 
-:fork01 a _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6,
+:fork01 a _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6,
         owl:Thing,
         cap:Fork,
         cap:GraspableObject,
@@ -257,13 +260,14 @@ foaf:name owl:sameAs foaf:name .
     rdfs:label "fork 01"@en ;
     rdfs:comment "The fork target for Group 11"@en ;
     owl:sameAs :fork01 ;
+    cap:hasAffordance :graspAffordance ;
     cap:hasObjectLabel "fork"^^xsd:string ;
     cap:hasTaskRole cap:TargetObject .
 
-:knife01 a _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6,
+:knife01 a _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6,
         owl:Thing,
         cap:GraspableObject,
         cap:Knife,
@@ -271,14 +275,15 @@ foaf:name owl:sameAs foaf:name .
     rdfs:label "knife 01"@en ;
     rdfs:comment "The knife target for Group 11"@en ;
     owl:sameAs :knife01 ;
+    cap:hasAffordance :graspAffordance ;
     cap:hasObjectLabel "knife"^^xsd:string ;
     cap:hasTaskRole cap:TargetObject .
 
-:pinkCup01 a _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db2,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6,
+:pinkCup01 a _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b2,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6,
         owl:Thing,
         cap:Cup,
         cap:GraspableObject,
@@ -286,11 +291,12 @@ foaf:name owl:sameAs foaf:name .
     rdfs:label "pink cup 01"@en ;
     rdfs:comment "The pink cup target for Group 11"@en ;
     owl:sameAs :pinkCup01 ;
+    cap:hasAffordance :graspAffordance ;
     cap:hasColor "pink"^^xsd:string ;
     cap:hasObjectLabel "pink cup"^^xsd:string ;
     cap:hasTaskRole cap:TargetObject .
 
-:plate01 a _:n16f1ec13566747f3a2f7fa837e84599db5,
+:plate01 a _:neb276b0b53964c79b354357d517d3f94b5,
         owl:Thing,
         cap:PhysicalObject,
         cap:Plate ;
@@ -426,6 +432,8 @@ cap:ccyont a foaf:Person ;
 
 "The container basket for Group 11"@en owl:sameAs "The container basket for Group 11"@en .
 
+"The disposition of an object to be grasped by the robot gripper"@en owl:sameAs "The disposition of an object to be grasped by the robot gripper"@en .
+
 "The fork target for Group 11"@en owl:sameAs "The fork target for Group 11"@en .
 
 "The green block target for Group 11"@en owl:sameAs "The green block target for Group 11"@en .
@@ -463,8 +471,6 @@ cap:ccyont a foaf:Person ;
 "fork"@en owl:sameAs "fork"@en .
 
 "fork 01"@en owl:sameAs "fork 01"@en .
-
-"grasping affordance"@en owl:sameAs "grasping affordance"@en .
 
 "green block 01"@en owl:sameAs "green block 01"@en .
 
@@ -517,13 +523,13 @@ cap:ccyont a foaf:Person ;
 "toy block"@en owl:sameAs "toy block"@en .
 
 owl:Nothing a owl:Class ;
-    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db2,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db5,
-        _:n16f1ec13566747f3a2f7fa837e84599db6,
-        _:n16f1ec13566747f3a2f7fa837e84599db7,
+    rdfs:subClassOf _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b2,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b5,
+        _:neb276b0b53964c79b354357d517d3f94b6,
+        _:neb276b0b53964c79b354357d517d3f94b7,
         owl:Nothing,
         owl:Thing,
         cap:Affordance,
@@ -641,6 +647,8 @@ cap:hasTaskRole a owl:ObjectProperty ;
 
 "AI Capstone 2026 Course Ontology"@en owl:sameAs "AI Capstone 2026 Course Ontology"@en .
 
+"grasping affordance"@en owl:sameAs "grasping affordance"@en .
+
 cap:CollectableObject a owl:Class ;
     rdfs:label "collectable object"@en ;
     rdfs:comment "A task role for an object that should be collected into another object or location."@en ;
@@ -672,7 +680,7 @@ owl:DatatypeProperty owl:sameAs owl:DatatypeProperty .
 cap:Basket a owl:Class ;
     rdfs:label "basket"@en ;
     rdfs:comment "A container target used to receive toy blocks in the toy-block-collection task."@en ;
-    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db7,
+    rdfs:subClassOf _:neb276b0b53964c79b354357d517d3f94b7,
         owl:Thing,
         cap:Basket,
         cap:PhysicalObject ;
@@ -710,10 +718,10 @@ cap:EndEffector a owl:Class ;
 cap:Fork a owl:Class ;
     rdfs:label "fork"@en ;
     rdfs:comment "A cutlery object to be placed in the cutlery-arrangement task."@en ;
-    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6,
+    rdfs:subClassOf _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6,
         owl:Thing,
         cap:Fork,
         cap:GraspableObject,
@@ -724,10 +732,10 @@ cap:Fork a owl:Class ;
 cap:Knife a owl:Class ;
     rdfs:label "knife"@en ;
     rdfs:comment "A cutlery object to be placed in the cutlery-arrangement task."@en ;
-    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6,
+    rdfs:subClassOf _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6,
         owl:Thing,
         cap:GraspableObject,
         cap:Knife,
@@ -738,7 +746,7 @@ cap:Knife a owl:Class ;
 cap:Plate a owl:Class ;
     rdfs:label "plate"@en ;
     rdfs:comment "A reference object used for arranging cutlery in the cutlery-arrangement task."@en ;
-    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db5,
+    rdfs:subClassOf _:neb276b0b53964c79b354357d517d3f94b5,
         owl:Thing,
         cap:PhysicalObject,
         cap:Plate ;
@@ -779,11 +787,11 @@ owl:ObjectProperty owl:sameAs owl:ObjectProperty .
 cap:Cup a owl:Class ;
     rdfs:label "cup"@en ;
     rdfs:comment "A container-like object used in the cup-stacking task."@en ;
-    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db2,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6,
+    rdfs:subClassOf _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b2,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6,
         owl:Thing,
         cap:Cup,
         cap:GraspableObject,
@@ -794,10 +802,10 @@ cap:Cup a owl:Class ;
 cap:ToyBlock a owl:Class ;
     rdfs:label "toy block"@en ;
     rdfs:comment "A small object to be collected into the basket in the toy-block-collection task."@en ;
-    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6,
+    rdfs:subClassOf _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6,
         owl:Thing,
         cap:GraspableObject,
         cap:PhysicalObject,
@@ -813,6 +821,13 @@ cap:Task a owl:Class ;
     owl:equivalentClass cap:Task ;
     owl:sameAs cap:Task .
 
+:graspAffordance a owl:Thing,
+        cap:Affordance,
+        cap:GraspingAffordance ;
+    rdfs:label "grasping affordance"@en ;
+    rdfs:comment "The disposition of an object to be grasped by the robot gripper"@en ;
+    owl:sameAs :graspAffordance .
+
 owl:Restriction owl:sameAs owl:Restriction .
 
 cap:GraspingAffordance a owl:Class ;
@@ -824,6 +839,8 @@ cap:GraspingAffordance a owl:Class ;
     owl:equivalentClass cap:GraspingAffordance ;
     owl:sameAs cap:GraspingAffordance .
 
+owl:AnnotationProperty owl:sameAs owl:AnnotationProperty .
+
 cap:Affordance a owl:Class ;
     rdfs:label "affordance"@en ;
     rdfs:comment "An action possibility associated with an object in relation to a robot capability and task context."@en ;
@@ -831,8 +848,6 @@ cap:Affordance a owl:Class ;
         cap:Affordance ;
     owl:equivalentClass cap:Affordance ;
     owl:sameAs cap:Affordance .
-
-owl:AnnotationProperty owl:sameAs owl:AnnotationProperty .
 
 cap:TargetObject a owl:Class,
         owl:Thing,
@@ -886,76 +901,76 @@ owl:Thing a owl:Class ;
     owl:equivalentClass owl:Thing ;
     owl:sameAs owl:Thing .
 
-_:n16f1ec13566747f3a2f7fa837e84599db5 a owl:Restriction ;
-    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db5 ;
-    owl:equivalentClass _:n16f1ec13566747f3a2f7fa837e84599db5 ;
+_:neb276b0b53964c79b354357d517d3f94b5 a owl:Restriction ;
+    rdfs:subClassOf _:neb276b0b53964c79b354357d517d3f94b5 ;
+    owl:equivalentClass _:neb276b0b53964c79b354357d517d3f94b5 ;
     owl:onProperty cap:hasAffordance ;
-    owl:sameAs _:n16f1ec13566747f3a2f7fa837e84599db5 ;
+    owl:sameAs _:neb276b0b53964c79b354357d517d3f94b5 ;
     owl:someValuesFrom cap:SupportAffordance .
 
-_:n16f1ec13566747f3a2f7fa837e84599db7 a owl:Restriction ;
-    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db7 ;
-    owl:equivalentClass _:n16f1ec13566747f3a2f7fa837e84599db7 ;
+_:neb276b0b53964c79b354357d517d3f94b7 a owl:Restriction ;
+    rdfs:subClassOf _:neb276b0b53964c79b354357d517d3f94b7 ;
+    owl:equivalentClass _:neb276b0b53964c79b354357d517d3f94b7 ;
     owl:onProperty cap:hasAffordance ;
-    owl:sameAs _:n16f1ec13566747f3a2f7fa837e84599db7 ;
+    owl:sameAs _:neb276b0b53964c79b354357d517d3f94b7 ;
     owl:someValuesFrom cap:ContainmentAffordance .
 
-_:n16f1ec13566747f3a2f7fa837e84599db2 a owl:Restriction ;
-    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db2 ;
-    owl:equivalentClass _:n16f1ec13566747f3a2f7fa837e84599db2 ;
+_:neb276b0b53964c79b354357d517d3f94b2 a owl:Restriction ;
+    rdfs:subClassOf _:neb276b0b53964c79b354357d517d3f94b2 ;
+    owl:equivalentClass _:neb276b0b53964c79b354357d517d3f94b2 ;
     owl:onProperty cap:hasAffordance ;
-    owl:sameAs _:n16f1ec13566747f3a2f7fa837e84599db2 ;
+    owl:sameAs _:neb276b0b53964c79b354357d517d3f94b2 ;
     owl:someValuesFrom cap:StackabilityAffordance .
 
-_:n16f1ec13566747f3a2f7fa837e84599db1 a owl:Restriction ;
-    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
-    owl:equivalentClass _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
+_:neb276b0b53964c79b354357d517d3f94b1 a owl:Restriction ;
+    rdfs:subClassOf _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6 ;
+    owl:equivalentClass _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6 ;
     owl:onProperty cap:hasAffordance ;
-    owl:sameAs _:n16f1ec13566747f3a2f7fa837e84599db1 ;
+    owl:sameAs _:neb276b0b53964c79b354357d517d3f94b1 ;
     owl:someValuesFrom cap:GraspingAffordance .
 
-_:n16f1ec13566747f3a2f7fa837e84599db3 a owl:Restriction ;
-    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
-    owl:equivalentClass _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
+_:neb276b0b53964c79b354357d517d3f94b3 a owl:Restriction ;
+    rdfs:subClassOf _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6 ;
+    owl:equivalentClass _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6 ;
     owl:onProperty cap:hasAffordance ;
-    owl:sameAs _:n16f1ec13566747f3a2f7fa837e84599db3 ;
+    owl:sameAs _:neb276b0b53964c79b354357d517d3f94b3 ;
     owl:someValuesFrom cap:GraspingAffordance .
 
-_:n16f1ec13566747f3a2f7fa837e84599db4 a owl:Restriction ;
-    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
-    owl:equivalentClass _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
+_:neb276b0b53964c79b354357d517d3f94b4 a owl:Restriction ;
+    rdfs:subClassOf _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6 ;
+    owl:equivalentClass _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6 ;
     owl:onProperty cap:hasAffordance ;
-    owl:sameAs _:n16f1ec13566747f3a2f7fa837e84599db4 ;
+    owl:sameAs _:neb276b0b53964c79b354357d517d3f94b4 ;
     owl:someValuesFrom cap:GraspingAffordance .
 
-_:n16f1ec13566747f3a2f7fa837e84599db6 a owl:Restriction ;
-    rdfs:subClassOf _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
-    owl:equivalentClass _:n16f1ec13566747f3a2f7fa837e84599db1,
-        _:n16f1ec13566747f3a2f7fa837e84599db3,
-        _:n16f1ec13566747f3a2f7fa837e84599db4,
-        _:n16f1ec13566747f3a2f7fa837e84599db6 ;
+_:neb276b0b53964c79b354357d517d3f94b6 a owl:Restriction ;
+    rdfs:subClassOf _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6 ;
+    owl:equivalentClass _:neb276b0b53964c79b354357d517d3f94b1,
+        _:neb276b0b53964c79b354357d517d3f94b3,
+        _:neb276b0b53964c79b354357d517d3f94b4,
+        _:neb276b0b53964c79b354357d517d3f94b6 ;
     owl:onProperty cap:hasAffordance ;
-    owl:sameAs _:n16f1ec13566747f3a2f7fa837e84599db6 ;
+    owl:sameAs _:neb276b0b53964c79b354357d517d3f94b6 ;
     owl:someValuesFrom cap:GraspingAffordance .
 
