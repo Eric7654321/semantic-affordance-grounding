@@ -70,6 +70,14 @@ WHERE {
 This query successfully narrowed down the graspable objects to only `:blueCup01` and `:pinkCup01`, proving that the robot can contextually identify targets based on task assignments.
 ![Pick up two cups](results/screenshots/task.png)
 
+### 4.3 Live SPARQL Endpoint Deployment (Proof of Concept)
+To demonstrate the practical deployment of our semantic grounding layer in a realistic Physical AI architecture, we went beyond local testing and deployed the `inferred-results.ttl` to a live edge server. 
+
+We containerized an **Apache Jena Fuseki** server using Docker and hosted it on a **Raspberry Pi** edge device. Furthermore, we configured a reverse proxy with SSL termination to expose the endpoint securely to the public internet.
+
+* **Live Endpoint URL:** [https://hw5-ai.kiwikiwiki.com/](https://hw5-ai.kiwikiwiki.com/)
+* **Dataset Name:** `/aicapstone`
+
 ## 5. Design Choices and Limitations
 * **Selective Affordance Assignment:** We intentionally omitted the grasping affordance for plates and baskets. This choice accurately models the limitations of a standard robot gripper, which should use these objects as spatial references or containers rather than direct manipulation targets.
 * **Hardware-Aware Offline Reasoning:** Running full Java-based JVM reasoners on edge devices (like Raspberry Pi) poses memory constraints. By exporting the inference as a static graph (`inferred-results.ttl`), we ensure that the robot can query the knowledge base via lightweight SPARQL endpoints in real-time without computational overhead.
