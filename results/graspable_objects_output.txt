@@ -1,6 +1,6 @@
-block01                                       | red block       | TargetObject
-block02                                       | green block     | TargetObject
-blueCup01                                     | blue cup        | TargetObject
-fork01                                        | fork            | TargetObject
-knife01                                       | knife           | TargetObject
-pinkCup01                                     | pink cup        | TargetObject
+block01                   | red block       | TargetObject
+block02                   | green block     | TargetObject
+blueCup01                 | blue cup        | TargetObject
+fork01                    | fork            | TargetObject
+knife01                   | knife           | TargetObject
+pinkCup01                 | pink cup        | TargetObject

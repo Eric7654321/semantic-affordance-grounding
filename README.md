@@ -26,49 +26,57 @@ Our ontology is designed to provide explicit semantic grounding for physical obj
 | `:block02` | `cap:ToyBlock` | `cap:TargetObject` | `:graspAffordance` |
 | `:basket01` | `cap:Basket` | `cap:ContainerTarget` | *(None required for grasping)* |
 
-*(Note: `:graspAffordance` is instantiated as a `cap:GraspingAffordance`)*
+*(Note: Target instances implicitly possess `cap:GraspingAffordance` based on the OWL restrictions defined in the core `course-affordance.ttl`.)*
 
 ## 4. Namespace Policy
 We strictly adhere to the separation of course-level shared vocabulary and group-specific modeling:
 - **`cap:`** (`<https://hcis.io/ontology/aicapstone/2026/>`): Used for the shared course vocabulary (core classes, predefined roles, affordance types, and data properties).
 - **`:` (Default) / `g11:`** (`<https://hcis.io/ontology/aicapstone/group11/>`): The group-specific namespace used exclusively for our custom task-relevant instances and group-level design extensions.
 
-## 5. Inference Mechanism & Affordance Modeling Explanation
-All graspable instances in our ontology are correctly annotated with a semantic link to `cap:GraspingAffordance` (e.g., via `cap:hasAffordance :graspAffordance`) to fulfill the semantic richness requirement. 
+## 5. Inference Mechanism & Reasoning Pattern 
+We achieved full Semantic Grounding by implementing true **OWL Description Logic (DL)** reasoning, strictly avoiding manual assertions of the `cap:GraspableObject` class.
 
-However, due to the limited support for full OWL Description Logic (specifically existential restrictions like `owl:someValuesFrom` and `owl:intersectionOf`) in our chosen Python `OWL-RL` reasoning workflow, we simplified the inference pattern. We asserted explicit `rdfs:subClassOf` relations for the target object classes (`Cup`, `Knife`, `Fork`, `ToyBlock`) directly to `cap:GraspableObject`. This allows the reasoner to successfully infer instance graspability dynamically while retaining all affordance annotations as valid semantic grounding information in the knowledge graph.
+In our `group-ontology.ttl`, we defined the logical axiom for `cap:GraspableObject` using `owl:equivalentClass` and `owl:intersectionOf`. Since `course-affordance.ttl` defines existential restrictions (`owl:someValuesFrom cap:GraspingAffordance`) for classes like `Cup`, `Knife`, and `ToyBlock`, the DL reasoner dynamically infers that instances of these classes are implicitly `cap:GraspableObject`. Objects lacking this affordance restriction (e.g., `Plate`, `Basket`) are successfully excluded during the inference process.
 
 ## 6. How `inferred-results.ttl` was Generated
-The `ontology/inferred-results.ttl` file was autonomously generated using our custom Python script (`src/run_inference.py`). The script parses both the base ontology and our group's ontology using `RDFLib`, initializes an `owlrl.DeductiveClosure` engine to execute forward-chaining over the `rdfs:subClassOf` rules, and serializes the expanded graph into the output `.ttl` file.
+The `ontology/inferred-results.ttl` file was autonomously generated using our custom Python script (`src/run_inference.py`). 
+We utilized **`owlready2`** and its integrated **HermiT Reasoner** to perform the offline DL inference. To ensure robust cross-format parsing (Turtle to XML) of complex blank nodes (e.g., `owl:intersectionOf`), the script dynamically asserts the equivalent class logic in the Python memory model before executing the reasoner. The inferred instances are then extracted and serialized back into a static Turtle file using **`rdflib`**, ready for SPARQL endpoint deployment.
 
 ## 7. Instructions for Running the Query
-To reproduce our results using the Python workflow:
-1. Ensure Python 3 is installed.
+To reproduce our results using the Python automated workflow:
+
+1. Ensure Python 3 is installed and create a virtual environment:
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
 2. Install the required dependencies:
-   ```bash
-   pip install rdflib owlrl
-   ```
+    ```bash
+    pip install rdflib owlready2
+    ```
+
 3. Execute the inference script from the repository root:
     ```bash
     python src/run_inference.py
     ```
-    This script will automatically load the ontologies, perform the inference, export the inferred graph, and execute the SPARQL query locally.
+
+This script will autonomously load the ontologies, invoke HermiT for DL reasoning, export the inferred graph, and execute the SPARQL queries.
 
 ## 8. Expected Query Output
-The SPARQL query correctly retrieves the inferred graspable objects while omitting the reference plate01 and the container basket01.
+The SPARQL query correctly retrieves the inferred graspable objects while omitting the reference `plate01` and the container `basket01`.
 
-Output:
+**Output:**
+```text
+Object                    | Label           | Role
+-----------------------------------------------------------------
+block01                   | red block       | TargetObject
+block02                   | green block     | TargetObject
+blueCup01                 | blue cup        | TargetObject
+fork01                    | fork            | TargetObject
+knife01                   | knife           | TargetObject
+pinkCup01                 | pink cup        | TargetObject
 
-```Plaintext
-Object                                        | Label           | Role
---------------------------------------------------------------------------------
-block01                                       | red block       | TargetObject
-block02                                       | green block     | TargetObject
-blueCup01                                     | blue cup        | TargetObject
-fork01                                        | fork            | TargetObject
-knife01                                       | knife           | TargetObject
-pinkCup01                                     | pink cup        | TargetObject
-```
 
 ## 9. Repository File Links
 - Group Ontology: ontology/group-ontology.ttl
@@ -77,8 +85,12 @@ pinkCup01                                     | pink cup        | TargetObject
 
 - Inferred Graph (Output): ontology/inferred-results.ttl
 
-- SPARQL Query: queries/graspable_objects.rq
+- Base SPARQL Query: queries/graspable_objects.rq
+
+- Advanced Task-Specific Query: queries/task_objects.rq (Filters graspable objects specifically for defined Manipulation Tasks)
 
 - Inference Script: src/run_inference.py
 
 - Saved Query Results: results/graspable_objects_output.txt
+
+- Screenshots: results/screenshots/ (Contains verification from Fuseki Endpoint)

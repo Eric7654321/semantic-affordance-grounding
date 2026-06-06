@@ -3,52 +3,65 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
+# --- Ontology Metadata ---
 <https://hcis.io/ontology/aicapstone/group11/> a owl:Ontology ;
-    owl:imports <https://hcis.io/ontology/aicapstone/2026/> .
+    owl:imports <https://hcis.io/ontology/aicapstone/2026/> ;
+    rdfs:label "Group 11 Course Ontology"@en ;
+    dcterms:title "Group 11 AI Capstone Ontology"@en ;
+    dcterms:description "This ontology contains the physical instances and reasoning pattern for Group 11."@en ;
+    dcterms:creator "Group 11"@en ;
+    dcterms:created "2026-06-06"^^xsd:date .
 
-# --- 簡化推論模式 ---
-cap:Cup rdfs:subClassOf cap:GraspableObject .
-cap:Knife rdfs:subClassOf cap:GraspableObject .
-cap:Fork rdfs:subClassOf cap:GraspableObject .
-cap:ToyBlock rdfs:subClassOf cap:GraspableObject .
 
-# --- 宣告共用的抓取能力 (Affordance) ---
-:graspAffordance a cap:GraspingAffordance ;
-    rdfs:label "grasping affordance"@en ;
-    rdfs:comment "The disposition of an object to be grasped by the robot gripper"@en .
+# Reasoning Pattern
 
-# --- 疊杯任務 (Cup Stacking) ---
+cap:GraspableObject
+    a owl:Class ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            cap:PhysicalObject
+            [ a owl:Restriction ;
+              owl:onProperty cap:hasAffordance ;
+              owl:someValuesFrom cap:GraspingAffordance
+            ]
+        )
+    ] .
+
+# =====================================================================
+# 任務物件實體 (Environment Instances)
+# =====================================================================
+
+# --- 疊杯任務 ---
 :blueCup01 a cap:Cup ;
     rdfs:label "blue cup 01"@en ;
     rdfs:comment "The blue cup target for Group 11"@en ;
     cap:hasColor "blue"^^xsd:string ;
     cap:hasObjectLabel "blue cup"^^xsd:string ;
-    cap:hasTaskRole cap:TargetObject ;
-    cap:hasAffordance :graspAffordance .
+    cap:hasTaskRole cap:TargetObject .
 
 :pinkCup01 a cap:Cup ;
     rdfs:label "pink cup 01"@en ;
     rdfs:comment "The pink cup target for Group 11"@en ;
     cap:hasColor "pink"^^xsd:string ;
     cap:hasObjectLabel "pink cup"^^xsd:string ;
-    cap:hasTaskRole cap:TargetObject ;
-    cap:hasAffordance :graspAffordance .
+    cap:hasTaskRole cap:TargetObject .
 
-# --- 排刀叉任務 (Cutlery Arrangement) ---
+# --- 排刀叉任務 ---
 :knife01 a cap:Knife ;
     rdfs:label "knife 01"@en ;
     rdfs:comment "The knife target for Group 11"@en ;
     cap:hasObjectLabel "knife"^^xsd:string ;
-    cap:hasTaskRole cap:TargetObject ;
-    cap:hasAffordance :graspAffordance .
+    cap:hasTaskRole cap:TargetObject .
 
 :fork01 a cap:Fork ;
     rdfs:label "fork 01"@en ;
     rdfs:comment "The fork target for Group 11"@en ;
     cap:hasObjectLabel "fork"^^xsd:string ;
-    cap:hasTaskRole cap:TargetObject ;
-    cap:hasAffordance :graspAffordance .
+    cap:hasTaskRole cap:TargetObject .
 
 :plate01 a cap:Plate ;
     rdfs:label "plate 01"@en ;
@@ -56,25 +69,32 @@ cap:ToyBlock rdfs:subClassOf cap:GraspableObject .
     cap:hasObjectLabel "plate"^^xsd:string ;
     cap:hasTaskRole cap:ReferenceObject .
 
-# --- 收積木任務 (Toy Block Collection) ---
+# --- 收積木任務 ---
 :block01 a cap:ToyBlock ;
     rdfs:label "red block 01"@en ;
     rdfs:comment "The red block target for Group 11"@en ;
     cap:hasColor "red"^^xsd:string ;
     cap:hasObjectLabel "red block"^^xsd:string ;
-    cap:hasTaskRole cap:TargetObject ;
-    cap:hasAffordance :graspAffordance .
+    cap:hasTaskRole cap:TargetObject .
 
 :block02 a cap:ToyBlock ;
     rdfs:label "green block 01"@en ;
     rdfs:comment "The green block target for Group 11"@en ;
     cap:hasColor "green"^^xsd:string ;
     cap:hasObjectLabel "green block"^^xsd:string ;
-    cap:hasTaskRole cap:TargetObject ;
-    cap:hasAffordance :graspAffordance .
+    cap:hasTaskRole cap:TargetObject .
 
 :basket01 a cap:Basket ;
     rdfs:label "basket 01"@en ;
     rdfs:comment "The container basket for Group 11"@en ;
     cap:hasObjectLabel "basket"^^xsd:string ;
     cap:hasTaskRole cap:ContainerTarget .
+
+:cupStackingTask01 a cap:ManipulationTask ;
+    rdfs:label "Cup Stacking Task 01"@en ;
+    cap:hasTargetObject :blueCup01, :pinkCup01 .
+
+:cutleryTask01 a cap:ManipulationTask ;
+    rdfs:label "Cutlery Arrangement Task 01"@en ;
+    cap:hasTargetObject :knife01, :fork01 ;
+    cap:hasReferenceObject :plate01 .
