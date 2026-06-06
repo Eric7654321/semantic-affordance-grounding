@@ -63,7 +63,15 @@ To reproduce our results using the Python automated workflow:
 
 This script will autonomously load the ontologies, invoke HermiT for DL reasoning, export the inferred graph, and execute the SPARQL queries.
 
-## 8. Expected Query Output
+## 8. Live SPARQL Endpoint (Proof of Concept)
+To demonstrate the practical deployment of our semantic grounding layer, we have deployed the inferred knowledge graph to a live edge server hosted on a Raspberry Pi. The endpoint is exposed via a reverse proxy with SSL termination.
+
+**🔗 Live Endpoint URL:** [https://hw5-ai.kiwikiwiki.com/](https://hw5-ai.kiwikiwiki.com/)
+*(Login credentials provided to TAs via internal submission if required)*
+
+**Dataset Name:** `/aicapstone`
+
+## 9. Expected Query Output
 The SPARQL query correctly retrieves the inferred graspable objects while omitting the reference `plate01` and the container `basket01`.
 
 **Output:**
@@ -78,8 +86,7 @@ knife01                   | knife           | TargetObject
 pinkCup01                 | pink cup        | TargetObject
 ```
 
-
-## 9. Repository File Links
+## 10. Repository File Links
 - Group Ontology: ontology/group-ontology.ttl
 - Imported Course Ontology: ontology/imports/course-affordance.ttl
 - Inferred Graph (Output): ontology/inferred-results.ttl
