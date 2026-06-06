@@ -1,6 +1,7 @@
 # AI Capstone 2026 - Homework 5: Ontology-based Semantic Grounding
 
 **Group:** 11
+
 **Members:** - 簡嫚萱、周佳瑩、劉逸安、呂杰軒、朱修毅
 
 ## 1. Selected Tasks
