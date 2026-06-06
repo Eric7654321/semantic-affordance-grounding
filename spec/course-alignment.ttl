@@ -1,0 +1,75 @@
+@prefix cap:  <https://hcis.io/ontology/aicapstone/2026/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix cora:      <http://purl.org/ieee1872-owl/cora-bare#> .
+@prefix sumocora:  <http://purl.org/ieee1872-owl/sumo-cora#> .
+@prefix soma:      <http://www.ease-crc.org/ont/SOMA.owl#> .
+@prefix dul:       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix corax:     <http://purl.org/ieee1872-owl/corax#> .
+@prefix knowrob:   <http://knowrob.org/kb/knowrob.owl#> .
+
+cap:RobotAgent
+    skos:prefLabel "robot agent"@en ;
+    skos:definition
+        "A robot or robot-controlled agent that can perceive, reason about, and manipulate objects in the task environment."@en ;
+    skos:closeMatch cora:Robot ;
+    skos:relatedMatch sumocora:Agent ;
+    skos:scopeNote
+        "The course term is aligned with CORA at the level of robot-as-agent or robot-as-system. It remains locally defined for the purposes of this homework."@en .
+
+cap:PhysicalObject
+    skos:prefLabel "physical object"@en ;
+    skos:definition
+        "A material object in the task environment, such as a cup, fork, toy block, plate, or basket."@en ;
+    skos:closeMatch dul:PhysicalObject ;
+    skos:relatedMatch soma:ShapedObject ;
+    skos:scopeNote
+        "The course term is intentionally broad. DUL provides a foundational physical-object category, while SOMA provides robotics-oriented refinements for embodied activity contexts."@en .
+
+cap:EndEffector
+    skos:prefLabel "end effector"@en ;
+    skos:definition
+        "A robot component used to physically interact with objects, such as a gripper."@en ;
+    skos:relatedMatch soma:Gripper ;
+    skos:scopeNote
+        "This homework treats end effectors at a simplified level sufficient for graspability reasoning."@en .
+
+cap:ManipulationTask
+    skos:prefLabel "manipulation task"@en ;
+    skos:definition
+        "A robot task in which an agent changes the pose, state, or arrangement of physical objects."@en ;
+    skos:broadMatch dul:Task ;
+    skos:relatedMatch soma:Manipulating ;
+    skos:scopeNote
+        "The course term covers the project tasks, including cup stacking, cutlery arrangement, and toy block collection."@en .
+
+cap:GraspingAffordance
+    skos:prefLabel "grasping affordance"@en ;
+    skos:definition
+        "An affordance by which an object can be grasped, held, lifted, or repositioned by a robot gripper."@en ;
+    skos:relatedMatch soma:Disposition ;
+    skos:relatedMatch soma:Grasping ;
+    skos:scopeNote
+        "The course term is represented locally as an affordance class. SOMA models affordance-like knowledge through dispositions and task-oriented action descriptions; therefore relatedMatch is used rather than exactMatch."@en .
+
+cap:GraspableObject
+    skos:prefLabel "graspable object"@en ;
+    skos:definition
+        "A physical object inferred to afford grasping by a robot end effector in the task context."@en ;
+    skos:relatedMatch soma:MovedObject ;
+    skos:relatedMatch soma:Patient ;
+    skos:scopeNote
+        "This is a course-level inferred class. It should not be treated as equivalent to a SOMA role such as soma:MovedObject or soma:Patient, because those terms describe participation roles in activities rather than the local OWL classification rule used in this homework."@en .
+
+cap:ContainerTarget
+    skos:prefLabel "container target"@en ;
+    skos:definition
+        "A task role for an object that receives or contains other objects, such as the basket in toy block collection."@en ;
+    skos:relatedMatch soma:Deposit ;
+    skos:relatedMatch soma:Deposition ;
+    skos:scopeNote
+        "This term is used locally to describe the role of a container in the course task, not to assert equivalence with a SOMA action or process class."@en .
