@@ -2,7 +2,7 @@
 
 **Group:** 11
 
-**Members:** - 簡嫚萱、周佳瑩、劉逸安、呂杰軒、朱修毅
+**Members:** 簡嫚萱、周佳瑩、劉逸安、呂杰軒、朱修毅
 
 ## 1. Selected Tasks
 Our group modeled objects across all three baseline entry-level tasks:
